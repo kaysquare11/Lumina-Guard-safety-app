@@ -19,8 +19,22 @@
   background: #be185d;
 }
 
+/* Leaflet Map Styles */
 .leaflet-container {
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+
+.leaflet-pane {
+  z-index: 400;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 1000;
+}
+
+.leaflet-control {
+  z-index: 1000;
 }

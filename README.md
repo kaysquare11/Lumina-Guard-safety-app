@@ -135,7 +135,7 @@ Lumina Guard features a unique **glass morphism** design with:
 
 ## 👤 Author
 
-**Your Name**
+**Name**
 - Abdulkabir Kabeeroh Abike
 - Internship: Dilwado Web Development Program
 - Duration: 3 Months (December 2024 - February 2025)
