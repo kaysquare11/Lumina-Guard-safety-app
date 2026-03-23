@@ -47,7 +47,7 @@ function ReportPage() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5001/api/reports', {
+      const response = await fetch('https://lumina-guard-backend.onrender.com/api/reports', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

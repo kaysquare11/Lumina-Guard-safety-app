@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   // ✅ Base API URL (adjust if deployed)
-  const API_URL = 'http://localhost:5000/api/auth';
+  const API_URL = 'https://lumina-guard-backend.onrender.com/api/auth';
 
   useEffect(() => {
     const token = localStorage.getItem('token');

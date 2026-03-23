@@ -24,7 +24,7 @@ function ProfilePage() {
   const fetchContacts = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5001/api/contacts', {
+      const response = await fetch('https://lumina-guard-backend.onrender.com/api/contacts', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();
@@ -43,7 +43,7 @@ function ProfilePage() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5001/api/contacts', {
+      const response = await fetch('https://lumina-guard-backend.onrender.com/api/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ function ProfilePage() {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5001/api/contacts/${id}`, {
+      const response = await fetch(`https://lumina-guard-backend.onrender.com/api/contacts/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });

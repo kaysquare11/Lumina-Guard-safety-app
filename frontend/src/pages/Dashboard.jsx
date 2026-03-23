@@ -50,7 +50,7 @@ function Dashboard() {
       const token = localStorage.getItem('token');
       
       try {
-        const contactsRes = await fetch('http://localhost:5001/api/contacts', {
+        const contactsRes = await fetch('https://lumina-guard-backend.onrender.com/api/contacts', {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (contactsRes.ok) {
@@ -62,7 +62,7 @@ function Dashboard() {
       }
 
       try {
-        const reportsRes = await fetch('http://localhost:5001/api/reports', {
+        const reportsRes = await fetch('https://lumina-guard-backend.onrender.com/api/reports', {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (reportsRes.ok) {
@@ -74,7 +74,7 @@ function Dashboard() {
       }
 
       try {
-        const alertsRes = await fetch('http://localhost:5001/api/sos/history', {
+        const alertsRes = await fetch('https://lumina-guard-backend.onrender.com/api/sos/history', {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (alertsRes.ok) {
@@ -116,7 +116,7 @@ function Dashboard() {
 
         try {
           const token = localStorage.getItem('token');
-          const response = await fetch('http://localhost:5001/api/sos/trigger', {
+          const response = await fetch('https://lumina-guard-backend.onrender.com/api/sos/trigger', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

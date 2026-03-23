@@ -14,7 +14,7 @@ function AlertsPage() {
   const fetchAlerts = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5001/api/sos/history', {
+      const response = await fetch('https://lumina-guard-backend.onrender.com/api/sos/history', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();
